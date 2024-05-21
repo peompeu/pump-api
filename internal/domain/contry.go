@@ -3,7 +3,7 @@ package domain
 import "gorm.io/gorm"
 
 type Contry struct {
-	*gorm.Model
+	gorm.Model
 
 	Name string
 	Code string

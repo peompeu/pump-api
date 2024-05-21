@@ -3,7 +3,7 @@ package domain
 import "gorm.io/gorm"
 
 type Subscription struct {
-	*gorm.Model
+	gorm.Model
 
 	WantDealBaseRate float64
 

@@ -19,7 +19,7 @@ const (
 )
 
 type User struct {
-	*gorm.Model
+	gorm.Model
 
 	Email    *string
 	Password *string
