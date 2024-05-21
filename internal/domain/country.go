@@ -2,7 +2,7 @@ package domain
 
 import "gorm.io/gorm"
 
-type Contry struct {
+type Country struct {
 	gorm.Model
 
 	Name string
