@@ -12,7 +12,11 @@ import (
 	"gorm.io/gorm/logger"
 )
 
-func Open() (*gorm.DB, error) {
+type Persistence struct {
+	*gorm.DB
+}
+
+func NewPersistence() (*Persistence, error) {
 
 	newLogger := logger.New(
 		log.New(os.Stdout, "\r\n", log.LstdFlags), // io writer
@@ -42,5 +46,6 @@ func Open() (*gorm.DB, error) {
 	}
 
 	fmt.Println("The Open function worked as expected.")
-	return db, nil
+
+	return &Persistence{DB: db}, nil
 }
