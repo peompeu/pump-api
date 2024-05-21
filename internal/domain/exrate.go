@@ -1,10 +1,6 @@
 package domain
 
-import "gorm.io/gorm"
-
 type ExRate struct {
-	gorm.Model
-
 	// Telegraphic Transfer Buying의 약자로, 송금을 통해 외화를 살 때 적용되는 환율을 의미합니다.
 	Ttb float64
 

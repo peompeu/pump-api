@@ -1,9 +1,5 @@
 package domain
 
-import (
-	"gorm.io/gorm"
-)
-
 type OauthProviderType string
 
 const (
@@ -19,8 +15,6 @@ const (
 )
 
 type User struct {
-	gorm.Model
-
 	Email    *string
 	Password *string
 
