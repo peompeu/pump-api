@@ -20,7 +20,4 @@ type User struct {
 
 	OauthProvider *OauthProviderType
 	Role          RoleType
-
-	Notifications []Notification
-	Subscriptions []Subscription
 }

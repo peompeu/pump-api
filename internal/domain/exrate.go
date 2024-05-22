@@ -9,6 +9,4 @@ type ExRate struct {
 
 	// 외환 거래의 기준 환율을 의미합니다.
 	DealBaseRate float64
-
-	CountryID uint
 }
